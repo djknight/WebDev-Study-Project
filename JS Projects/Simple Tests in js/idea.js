@@ -139,24 +139,24 @@ function isLeap(year) {
 }
 
 //other way of a leap yea (tho confused still ???)
-function isLeap2(year) {
-  if (year % 4 === 0) {
-    if (year % 100 === 0) {
-      if (year % 400 === 0) {
-        return " leap year.";
-      } else {
-        return "not a leap year";
-      }
-    } else {
-      return "leap year.";
-    }
-  } else {
-    return "not a leap year.";
-  }
-  isLeap(2000);
-}
-/// arrays
+// function isLeap2(year) {
+//   if (year % 4 === 0) {
+//     if (year % 100 === 0) {
+//       if (year % 400 === 0) {
+//         return " leap year.";
+//       } else {
+//         return "not a leap year";
+//       }
+//     } else {
+//       return "leap year.";
+//     }
+//   } else {
+//     return "not a leap year.";
+//   }
+//   isLeap(2000);
+// }
 
+/// arrays
 var guestList = ["Dan", "jack", "Kristy", "Kelly", "niki", "jason"];
 var guesName = prompt("what is your name");
 if (guestList.includes(guesName)) {
@@ -183,4 +183,14 @@ function fizzBuzz() {
   // count++ makes it add 1 2 3 etc with out its always just 1 1 1
   count++;
   console.log(output);
+}
+
+//math.random name paying for food gen
+function whosPaying(names) {
+  var name = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+  var numberOfPeople = names.length;
+  var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+  var randomPerson = names[randomPersonPosition];
+
+  return randomPerson + "Is going to buy lunch today!"
 }
