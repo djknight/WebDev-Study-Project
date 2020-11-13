@@ -45,18 +45,18 @@ function action() {
     document.getElementById("togglee").style.visibility = "visible";
   }
 }
-//// end of strings
+//// end of strings--------------------
 
-//numbers
+//numbers--------------
 
-//how old is the dog?
+//how old is the dog?-------------------
 function dogFunction() {
   var dogAge = prompt("How old is your dog?");
   var humanAge = (dogAge - 2) * 4 + 21;
   alert(" Your dog is " + humanAge + " years old in human years ");
 }
 
-/// age how logn do i have left till 90
+/// age how logn do i have left till 90----------------
 function lifeInWeeks(age) {
   var age = prompt("your age");
   var yearsRemaining = 90 - age;
@@ -75,19 +75,21 @@ function lifeInWeeks(age) {
   );
 }
 
-/// some math stuff weaight cal
-function bmiCalculator(weight, height) {
-  var bmi = weight / (height * height);
-  // OR using m2
-  var bmi = weight / Math.pow(height, 2);
-  /// retuning with numbers
-  return bmi;
-  /// return with roudning the number
-  return Math.round(bmi);
-}
-var bmi = bmiCalculator(65, 1.8);
-console.log(bmi);
-////////// love cal
+// /// some math stuff weaight cal--------------------------
+
+// function bmiCalculator(weight, height) {
+//   var bmi = weight / (height * height);
+//   // OR using m2
+//   var bmi = weight / Math.pow(height, 2);
+//   /// retuning with numbers
+//   return bmi;
+//   /// return with roudning the number
+//   return Math.round(bmi);
+// }
+// var bmi = bmiCalculator(65, 1.8);
+// console.log(bmi);
+
+////////// love cal-----------------------------------------
 function loveName() {
   var loveName1 = prompt("enter name");
   var loveName2 = prompt("other name");
@@ -124,7 +126,8 @@ function loveName() {
   }
 }
 
-//leap year stuff  *confused*
+//leap year stuff  *confused*-----------------------------------------
+
 function isLeap(year) {
   if (year % 4 !== 0) {
     return "not leap year.";
@@ -138,7 +141,7 @@ function isLeap(year) {
   isLeap(2000);
 }
 
-//other way of a leap yea (tho confused still ???)
+//other way of a leap yea (tho confused still ???)------------------
 // function isLeap2(year) {
 //   if (year % 4 === 0) {
 //     if (year % 100 === 0) {
@@ -156,16 +159,17 @@ function isLeap(year) {
 //   isLeap(2000);
 // }
 
-/// arrays
-var guestList = ["Dan", "jack", "Kristy", "Kelly", "niki", "jason"];
-var guesName = prompt("what is your name");
-if (guestList.includes(guesName)) {
-  alert("wellcome");
-} else {
-  alert("sorry maybe next time");
-}
+/// arrays guest list idear-------------------------
 
-// push- adds pop- remove
+// var guestList = ["Dan", "jack", "Kristy", "Kelly", "niki", "jason"];
+// var guesName = prompt("what is your name");
+// if (guestList.includes(guesName)) {
+//   alert("wellcome");
+// } else {
+//   alert("sorry maybe next time");
+// }
+
+// push- adds pop- remove------------------------------
 
 var output = [];
 var count = 1;
@@ -185,7 +189,8 @@ function fizzBuzz() {
   console.log(output);
 }
 
-//math.random name paying for food gen
+//math.random name paying for food gen---------------------
+
 // function whosPaying(names) {
 //   var name = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
 //   var numberOfPeople = names.length;
@@ -193,13 +198,15 @@ function fizzBuzz() {
 //   var randomPerson = names[randomPersonPosition];
 
 //   return randomPerson + "Is going to buy lunch today!";
-}
-///
+// }
+
+
+/// whos paying--------------
 function whosPaying(names) {
-  
   var name = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
-  
-  
-  return name[Math.floor(Math.random() * Math.floor(name.length))] + " is going to buy lunch today!";
+
+  return (
+    name[Math.floor(Math.random() * Math.floor(name.length))] +
+    " is going to buy lunch today!"
+  );
 }
-      
