@@ -186,11 +186,20 @@ function fizzBuzz() {
 }
 
 //math.random name paying for food gen
-function whosPaying(names) {
-  var name = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
-  var numberOfPeople = names.length;
-  var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
-  var randomPerson = names[randomPersonPosition];
+// function whosPaying(names) {
+//   var name = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+//   var numberOfPeople = names.length;
+//   var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+//   var randomPerson = names[randomPersonPosition];
 
-  return randomPerson + "Is going to buy lunch today!"
+//   return randomPerson + "Is going to buy lunch today!";
 }
+///
+function whosPaying(names) {
+  
+  var name = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+  
+  
+  return name[Math.floor(Math.random() * Math.floor(name.length))] + " is going to buy lunch today!";
+}
+      
