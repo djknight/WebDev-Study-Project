@@ -189,8 +189,7 @@ function fizzBuzz() {
   console.log(output);
 }
 
-//math.random name paying for food gen---------------------
-
+//math.random name paying for food.
 // function whosPaying(names) {
 //   var name = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
 //   var numberOfPeople = names.length;
@@ -199,7 +198,6 @@ function fizzBuzz() {
 
 //   return randomPerson + "Is going to buy lunch today!";
 // }
-
 
 /// whos paying--------------
 function whosPaying(names) {
