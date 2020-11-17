@@ -172,9 +172,8 @@ function isLeap(year) {
 // push- adds pop- remove------------------------------
 
 var output = [];
-var count = 1;
 function fizzBuzz() {
-  while (count <= 100) {
+  for (var count = 1; count < 101; count++) {
     if (count % 3 === 0 && count % 5 === 0) {
       output.push("fizzBuzz");
     } else if (count % 3 === 0) {
@@ -184,8 +183,6 @@ function fizzBuzz() {
     } else {
       output.push(count);
     }
-    // count++ makes it add 1 2 3 etc with out its always just 1 1 1
-    count++;
   }
   console.log(output);
 }
