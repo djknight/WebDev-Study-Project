@@ -174,30 +174,21 @@ function isLeap(year) {
 var output = [];
 var count = 1;
 function fizzBuzz() {
-  if (count % 3 === 0 && count % 5 === 0) {
-    output.push("fizzBuzz");
-  } else if (count % 3 === 0) {
-    output.push("Fizz");
-  } else if (count % 5 === 0) {
-    output.push("Buzz");
-  } else {
-    output.push(count);
+  while (count <= 100) {
+    if (count % 3 === 0 && count % 5 === 0) {
+      output.push("fizzBuzz");
+    } else if (count % 3 === 0) {
+      output.push("Fizz");
+    } else if (count % 5 === 0) {
+      output.push("Buzz");
+    } else {
+      output.push(count);
+    }
+    // count++ makes it add 1 2 3 etc with out its always just 1 1 1
+    count++;
   }
-
-  // count++ makes it add 1 2 3 etc with out its always just 1 1 1
-  count++;
   console.log(output);
 }
-
-//math.random name paying for food.
-// function whosPaying(names) {
-//   var name = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
-//   var numberOfPeople = names.length;
-//   var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
-//   var randomPerson = names[randomPersonPosition];
-
-//   return randomPerson + "Is going to buy lunch today!";
-// }
 
 /// whos paying--------------
 function whosPaying(names) {
@@ -207,4 +198,19 @@ function whosPaying(names) {
     name[Math.floor(Math.random() * Math.floor(name.length))] +
     " is going to buy lunch today!"
   );
+}
+///99 bottles of beer
+function bottleCount(beerCount) {
+  var beerCount = 99;
+  while (beerCount >= 0) {
+    var bottleWord = "bottle";
+    if (beerCount === 1) {
+      bottleWord = "bottles";
+    }
+    console.log(beerCount + " " + bottleWord + " of beer on the wall");
+    console.log(beerCount + " " + bottleWord + " of beer");
+    console.log("Take one down, pass it around,");
+    beerCount--;
+    console.log(beerCount + " " + bottleWord + " of beer on the wall.");
+  }
 }
