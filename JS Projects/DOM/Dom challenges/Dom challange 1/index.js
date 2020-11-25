@@ -3,3 +3,4 @@ document.firstElementChild.lastElementChild.children[3].lastElementChild.innerHT
 
 document.querySelector("li a").style.color = "red";
 document.querySelector("button").style.backgroundColor = "yellow";
+document.querySelector("h1").classList.add("huge"); 
