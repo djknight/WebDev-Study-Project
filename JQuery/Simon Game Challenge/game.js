@@ -37,7 +37,6 @@ function playSound() {
 
 //using the .click to press for sound & animation
 $(".btn").click(function () {
-  nextSequence();
   var userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
   playSound(userChosenColour);
