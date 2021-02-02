@@ -75,7 +75,7 @@ function checkAnswer(currentLevel) {
       }, 1000);
     }
   } else {
-    /// the failed part text colo calling ccs and sound
+    /// the failed part text & calling ccs and sound
     var audio = new Audio("sounds/wrong.mp3");
     audio.play();
     $("body").addClass("game-over");
