@@ -1,18 +1,18 @@
-var buttonColours = ["red", "blue", "green", "yellow"];
-var gamePattern = [];
-var userClickedPattern = [];
+const buttonColours = ["red", "blue", "green", "yellow"];
+let gamePattern = [];
+let userClickedPattern = [];
 // var for the level
-var started = false;
-var level = 0;
+let started = false;
+let level = 0;
 
 // the main function! for the nextSequence
 function nextSequence() {
   //for the use clicked pattern
   userClickedPattern = [];
 
-  var randomNumber = Math.floor(Math.random() * 4);
+  const randomNumber = Math.floor(Math.random() * 4);
   //Assigning random number to desired color
-  var randomChosenColour = buttonColours[randomNumber];
+  const randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour);
   //plus the level when clicked
   level++;
@@ -27,7 +27,7 @@ function nextSequence() {
 //sounds
 function playSound() {
   $(".btn").click(function () {
-    var audio = new Audio("sounds/" + this.id + ".mp3");
+    const audio = new Audio("sounds/" + this.id + ".mp3");
     audio.play();
 
     //play sound here if not il get echo (for some reason)?
@@ -37,7 +37,7 @@ function playSound() {
 
 //using the .click to press for sound & animation
 $(".btn").click(function () {
-  var userChosenColour = $(this).attr("id");
+  const userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
   playSound(userChosenColour);
   animatePress(userChosenColour);
@@ -76,7 +76,7 @@ function checkAnswer(currentLevel) {
     }
   } else {
     /// the failed part text & calling ccs and sound
-    var audio = new Audio("sounds/wrong.mp3");
+    const audio = new Audio("sounds/wrong.mp3");
     audio.play();
     $("body").addClass("game-over");
     setTimeout(function () {
