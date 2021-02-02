@@ -75,6 +75,21 @@ function checkAnswer(currentLevel) {
       }, 1000);
     }
   } else {
-    console.log("wrong");
+    /// the failed part text colo calling ccs and sound
+    var audio = new Audio("sounds/wrong.mp3");
+    audio.play();
+    $("body").addClass("game-over");
+    setTimeout(function () {
+      $("body").removeClass("game-over");
+    }, 200);
+    $("h1").text("Game Over, Press Any Key to Restart");
+    // the part that resets
+    startOver();
   }
+}
+//reset
+function startOver() {
+  started = false;
+  gamePattern = [];
+  level = 0;
 }
