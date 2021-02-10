@@ -1,6 +1,7 @@
 # The-WebDev-Study
- the wed dev curse studdy folder
+ The web dev curse studdy folder
   more to add
+  
  some random JS
  
  Dice game JS  https://djknight.github.io/WebDev-Study-Project/JS%20Projects/DOM/Dicee%20Game/dicee.html
