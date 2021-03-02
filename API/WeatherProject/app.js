@@ -4,8 +4,17 @@ const https = require("https");
 const app = express();
 
 app.get("/", function (req, res) {
+  const query = "Brisbane";
+  const apiKey = "8147ee1c74bd05922b6f9d50ff695d23";
+  const unit = "metric";
   const url =
-    "https://api.openweathermap.org/data/2.5/weather?q=Brisbane, AU&appid=8147ee1c74bd05922b6f9d50ff695d23&units=metric";
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
+    query +
+    ", AU&appid=" +
+    apiKey +
+    "&units=" +
+    unit;
+
   https.get(url, function (response) {
     //status code 200s! OK
     console.log(response.statusCode);
