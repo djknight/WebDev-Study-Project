@@ -1,10 +1,15 @@
 const express = require("express");
 const https = require("https");
+const bodyParser = require("body-Parser");
 
 const app = express();
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
-  const query = "Brisbane";
+  res.sendFile(__dirname + "/index.html");
+});
+app.post("/", function (req, res) {
+  const query = req.body.cityName;
   const apiKey = "8147ee1c74bd05922b6f9d50ff695d23";
   const unit = "metric";
   const url =
