@@ -31,7 +31,11 @@ app.post("/", function (req, res) {
       const icon = weatherData.weather[0].icon;
       const imageURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
       res.write(
-        "<p>The Current weather in Brisbane is " + weatherDescription + "</p>"
+        "<p>The Current weather in " +
+          query +
+          " is " +
+          weatherDescription +
+          "</p>"
       );
       res.write("<h1> The temperature is " + temp + " degrees Celsius.</h1>");
       res.write("<img src=" + imageURL + ">");
