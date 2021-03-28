@@ -1,6 +1,8 @@
+require("dotenv").config();
+
 const express = require("express");
 const bodyParser = require("body-parser");
-const request = require("requests");
+const axios = require("axios");
 
 const app = express();
 
@@ -17,45 +19,29 @@ app.post("/", function (req, res) {
   var email = req.body.email;
 
   const data = {
-    members: [
-      {
-        email_address: email,
-        status: "subscribed",
-        merge_fields: {
-          FNAME: firstName,
-          LNAME: lastName,
-        },
-      },
-    ],
+    email_address: email,
+    status: "subscribed",
+    merge_fields: {
+      FNAME: firstName,
+      LNAME: lastName,
+    },
   };
 
   const jsonData = JSON.stringify(data);
   console.log(jsonData);
 
-  //YOURSERVER.api.mailchimp.com WHERE IS IT stupid mailchimp more like mailshrimps !!!
-  const url = "https:";
-
-  const options = {
-    method: "POST",
-
-    //api key yes yes il hide it latter...
-    auth: "c8665410f5f7e4b281623c1deb7f4444-us1",
-  };
-  const request = https.request(url, options, function (response) {
-    response.on("data", function (data) {
-      console.log(JSON.parse(data));
-    });
-  });
-  request.write(jsonData);
-  request.end();
+  const url = "https://us1.api.mailchimp.com/3.0/lists/be5b9bd5cb/members";
+  // Send a POST request
+  axios({
+    method: "post",
+    url: url,
+    data: data,
+    auth: {
+      username: "key",
+      password: process.env.MAILCHIMP_TOKEN,
+    },
+  }).catch((error) => console.error(error.response.data));
 });
-// for the cmd/ nodemoon starts atm
 app.listen(3000, function (req, res) {
   console.log("server running on port 3000 ctl c to close");
 });
-
-//api key chimp
-//c8665410f5f7e4b281623c1deb7f4444-us1
-
-//list identity chomp
-//be5b9bd5cb
