@@ -1,5 +1,5 @@
 # The-WebDev-Study
- The web dev curse studdy folder
+ The web dev curse study folder
   more to add
   
  some random JS
