@@ -14,5 +14,5 @@
  some NODE.js
  https://github.com/djknight/WebDev-Study-Project/tree/main/Node
  
- API's weather app & New's laetter sign up
+ API's weather app & New's letter sign up
 https://github.com/djknight/WebDev-Study-Project/tree/main/API
