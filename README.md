@@ -13,3 +13,6 @@
  
  some NODE.js
  https://github.com/djknight/WebDev-Study-Project/tree/main/Node
+ 
+ Weather app in node.js
+ https://github.com/djknight/WebDev-Study-Project/tree/main/API/WeatherProject
