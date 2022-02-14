@@ -2,7 +2,7 @@
  The web dev curse study folder
   more to add
   
- some random JS
+ some of what is in this folder.
  
  Dice game JS  https://djknight.github.io/WebDev-Study-Project/JS%20Projects/DOM/Dicee%20Game/dicee.html
  
