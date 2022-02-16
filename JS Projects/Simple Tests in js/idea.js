@@ -45,18 +45,18 @@ function action() {
     document.getElementById("togglee").style.visibility = "visible";
   }
 }
-//// end of strings--------------------
+// -------------------- end of strings ------------------------
 
-//numbers--------------
+//--------------------------- numbers -------------------------
 
-//how old is the dog?-------------------
+// how old is the dog?
 function dogFunction() {
   var dogAge = prompt("How old is your dog?");
   var humanAge = (dogAge - 2) * 4 + 21;
   alert(" Your dog is " + humanAge + " years old in human years ");
 }
 
-/// age how logn do i have left till 90----------------
+// age how logn do i have left till 90
 function lifeInWeeks(age) {
   var age = prompt("your age");
   var yearsRemaining = 90 - age;
@@ -66,17 +66,24 @@ function lifeInWeeks(age) {
 
   alert(
     "You have " +
-      daysLeft +
-      " days, " +
-      weeksLeft +
-      " weeks, and " +
-      monthsLeft +
-      " months left."
+    daysLeft +
+    " days, " +
+    weeksLeft +
+    " weeks, and " +
+    monthsLeft +
+    " months left."
   );
 }
+// Calculator
+function calc() {
+  var firstNum = prompt("Enter First number");
+  var secondNum = prompt("Enter Second number");
+  var sumNum = Number(firstNum) + Number(secondNum);
+  alert("the sum is " + sumNum);
+}
 
-// /// some math stuff weaight cal--------------------------
 
+// --------------- some math stuff weaight cal ------------------
 // function bmiCalculator(weight, height) {
 //   var bmi = weight / (height * height);
 //   // OR using m2
@@ -88,8 +95,9 @@ function lifeInWeeks(age) {
 // }
 // var bmi = bmiCalculator(65, 1.8);
 // console.log(bmi);
+// --------------------------------------------------------------
 
-////////// love cal-----------------------------------------
+// love cal
 function loveName() {
   var loveName1 = prompt("enter name");
   var loveName2 = prompt("other name");
@@ -141,7 +149,7 @@ function isLeap(year) {
   isLeap(2000);
 }
 
-//other way of a leap yea (tho confused still ???)------------------
+//other way of a leap yea (tho confused still ???)------------------=
 // function isLeap2(year) {
 //   if (year % 4 === 0) {
 //     if (year % 100 === 0) {
@@ -159,7 +167,7 @@ function isLeap(year) {
 //   isLeap(2000);
 // }
 
-/// arrays guest list idear-------------------------
+/// --------------------- arrays guest list idear -------------------------
 
 // var guestList = ["Dan", "jack", "Kristy", "Kelly", "niki", "jason"];
 // var guesName = prompt("what is your name");
@@ -169,8 +177,9 @@ function isLeap(year) {
 //   alert("sorry maybe next time");
 // }
 
-// push- adds pop- remove------------------------------
+// ------------------- push adds pop remove ------------------------------
 
+// Fizz Buzz
 var output = [];
 function fizzBuzz() {
   for (var count = 1; count < 101; count++) {
@@ -187,7 +196,7 @@ function fizzBuzz() {
   console.log(output);
 }
 
-/// whos paying--------------
+// whos paying
 function whosPaying(names) {
   var name = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
 
@@ -196,7 +205,7 @@ function whosPaying(names) {
     " is going to buy lunch today!"
   );
 }
-///99 bottles of beer
+// 99 bottles of beer
 function bottleCount(beerCount) {
   var beerCount = 99;
   while (beerCount >= 0) {
