@@ -2,18 +2,18 @@
 
 //the frist name
 function myFunction() {
-  var name = prompt("Please enter your name");
+  const name = prompt("Please enter your name");
 
   //  to cap and de Cap the name
-  var firstChar = name.slice(0, 1);
-  var upperCaseFirstChar = firstChar.toUpperCase();
-  var restOfName = name.slice(1, name.length);
+  let firstChar = name.slice(0, 1);
+  let upperCaseFirstChar = firstChar.toUpperCase();
+  let restOfName = name.slice(1, name.length);
 
   // to lower case the rest of name
   restOfName = restOfName.toLowerCase();
 
   //to cap the name
-  var capitalisedName = upperCaseFirstChar + restOfName;
+  let capitalisedName = upperCaseFirstChar + restOfName;
 
   // to make a workd a cap after a space ( yet to be made)
 
@@ -35,7 +35,7 @@ function limitText(limitField, limitCount, limitNum) {
     limitCount.value = limitNum - limitField.value.length;
   }
 }
-var hidden = false;
+let hidden = false;
 
 function action() {
   hidden = !hidden;
@@ -235,7 +235,7 @@ function fibonacciGenerator(n) {
 //----------------- case & switch & direction----------------
 
 function moveComand(direction) {
-  var whatHappens;
+  let whatHappens;
   switch (direction) {
     case "forward":
       whatHappens = "You encounter a monster!"
