@@ -254,3 +254,10 @@ function moveComand(direction) {
   }
   return whatHappens;
 }
+//---------------------Currying---------- es6
+// using functions to x and a b  using curriedMultiply(3)(4) = 12 will x the number by a and b
+const multiply = (a, b) => a * b;
+const curriedMultiply = (a) => (b) => a * b;
+curriedMultiply(3);
+// in console this multiplyBy5 will multiply any number by 5  multiplyBy5 (10) = 50
+const multiplyBy5 = curriedMultiply(5);
