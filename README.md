@@ -16,3 +16,6 @@
  
  API's weather app & New's letter sign up
 https://github.com/djknight/WebDev-Study-Project/tree/main/API
+
+Some Random JS with Alot of random loops/functions/numbers/strings /games and more 
+https://djknight.github.io/WebDev-Study-Project/JS%20Projects/Simple%20Tests%20in%20js/index.html
