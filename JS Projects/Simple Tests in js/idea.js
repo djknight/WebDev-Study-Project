@@ -249,6 +249,8 @@ function moveComand(direction){
     case"left":
     whatHappens = "You found a chest!"
     break;
+    default:
+      whatHappens ="please enter a valid direction 'foward' 'back' 'right' 'left' "
   }
   return whatHappens;
 }
