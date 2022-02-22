@@ -250,7 +250,7 @@ function moveComand(direction) {
       whatHappens = "You found a chest!"
       break;
     default:
-      whatHappens = "please enter a valid direction 'foward' 'back' 'right' 'left' "
+      whatHappens = "please enter a valid direction 'forward' 'back' 'right' 'left' "
   }
   return whatHappens;
 }
