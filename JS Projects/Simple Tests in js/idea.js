@@ -234,23 +234,23 @@ function fibonacciGenerator(n) {
 }
 //----------------- case & switch & direction----------------
 
-function moveComand(direction){
+function moveComand(direction) {
   var whatHappens;
-  switch(direction){
-    case"forward":
-    whatHappens = "You encounter a monster!"
-    break;
-    case"back":
-    whatHappens = "You arrived home!"
-    break;
-    case"right":
-    whatHappens = "You found a river!"
-    break;
-    case"left":
-    whatHappens = "You found a chest!"
-    break;
+  switch (direction) {
+    case "forward":
+      whatHappens = "You encounter a monster!"
+      break;
+    case "back":
+      whatHappens = "You arrived home!"
+      break;
+    case "right":
+      whatHappens = "You found a river!"
+      break;
+    case "left":
+      whatHappens = "You found a chest!"
+      break;
     default:
-      whatHappens ="please enter a valid direction 'foward' 'back' 'right' 'left' "
+      whatHappens = "please enter a valid direction 'foward' 'back' 'right' 'left' "
   }
   return whatHappens;
 }
