@@ -232,7 +232,7 @@ function fibonacciGenerator(n) {
   }
   return output;
 }
-//----------------- case & switch & direction----------------
+//----------------- case & switch & direction es6----------------
 
 function moveComand(direction) {
   let whatHappens;
@@ -261,3 +261,10 @@ const curriedMultiply = (a) => (b) => a * b;
 curriedMultiply(3);
 // in console this multiplyBy5 will multiply any number by 5  multiplyBy5 (10) = 50
 const multiplyBy5 = curriedMultiply(5);
+
+
+//-------------------compose -----------es6
+//functions with in functions with in functions composing as something XD ??
+const compose = (f, g) => (a) => f(g(a));
+const sum = (num) + 1;
+compose(sum, sum)(5); //=7 num +1 f+g +5 = 7
