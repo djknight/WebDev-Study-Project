@@ -265,6 +265,36 @@ const multiplyBy5 = curriedMultiply(5);
 
 //-------------------compose -----------es6
 //functions with in functions with in functions composing as something XD ??
-const compose = (f, g) => (a) => f(g(a));
-const sum = (num) + 1;
-compose(sum, sum)(5); //=7 num +1 f+g +5 = 7
+// const compose = (f, g) => (a) => f(g(a));
+// const sum = (num) + 1;
+// compose(sum, sum)(5); //=7 num +1 f+g +5 = 7
+
+
+// ----------------loops-----------------
+const basket = ['apples', 'oranges', 'grapes', 'bananas']
+//object for in loop
+const databasket = {
+  apples: 5,
+  oranges: 7,
+  grapes: 42,
+  bananas: 6
+}
+//1st
+for (let i = 0; i < basket.length; i++) {
+  console.log(basket[i]);
+}
+//2nd
+basket.forEach(item => {
+  console.log(item);
+});
+// 3rd iterating!! 
+//-ar -strings / for of loop
+for (item of 'basket') {
+  console.log(item);
+}
+//4th for in loop // using objects so (create an object to use this!)
+// for in to see object - Properties 
+// enumerating is for objects 
+for (item in databasket) {
+  console.log(item);
+}
