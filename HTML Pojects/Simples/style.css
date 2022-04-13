@@ -1,0 +1,26 @@
+body{
+  background-color: rgb(231, 224, 203);
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  color: blue;
+}
+.stuff {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+img {
+  width: 40%;
+  height: auto;
+  border-radius: 20%;
+}
+ul {
+  text-align: center;
+  list-style: inside;
+}
