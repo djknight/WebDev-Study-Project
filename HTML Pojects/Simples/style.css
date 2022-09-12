@@ -1,7 +1,17 @@
+<<<<<<< HEAD
 h1 {
   text-align: center;
   text-transform: uppercase;
 
+=======
+body{
+  background-color: rgb(231, 224, 203);
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+>>>>>>> c6d3b9ec600abdc384efe62dc6dd60db205dbe5f
 }
 
 h2 {
@@ -10,10 +20,23 @@ h2 {
 }
 .stuff {
   text-align: center;
+<<<<<<< HEAD
   font-family: 'Courier New', Courier, monospace;
 }
 img{
   width: 50%;
   height: auto;
   border-radius: 20%;
+=======
+  font-family: "Courier New", Courier, monospace;
+}
+img {
+  width: 35%;
+  height: auto;
+  border-radius: 20%;
+}
+ul {
+  text-align: center;
+  list-style: inside;
+>>>>>>> c6d3b9ec600abdc384efe62dc6dd60db205dbe5f
 }
