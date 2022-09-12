@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+h2 {
+  text-align: center;
+  color: blue;
+}
+.stuff {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+img{
+  width: 50%;
+  height: auto;
+  border-radius: 20%;
+}
